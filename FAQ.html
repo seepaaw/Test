@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Aroma - FAQ (Pertanyaan Umum)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', 'sans-serif'], 
+                        aboreto: ['Aboreto', 'cursive'],
+                    },
+                    colors: {
+                        'kopi-dark': '#371e17',      
+                        'kopi-light-bg': '#efebe9',     
+                        'kopi-darker': '#25140F', 
+                        'kopi-accent-light': '#AF8456', 
+                        'kopi-accent-dark': '#493724', 
+                        'faq-bg-brown': '#7F5F40', 
+                        'faq-bg-dark-brown': '#371e17', 
+                        'faq-title-bg': '#AF8456', 
+                    },
+                    borderRadius: {
+                        '12': '0.75rem', 
+                        '3xl': '1.5rem', 
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg-faq {
+            background-image: url('img/header.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        .border-b-brown-600 {
+            border-color: #371e17; 
+        }
+        .accordion-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .accordion-item:last-child {
+            border-bottom: none; 
+        }
+        .accordion-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            font-weight: 600;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding-bottom: 0; 
+        }
+        .accordion-content.active {
+            max-height: 500px; 
+            padding-bottom: 1rem;
+            transition: max-height 0.5s ease-in, padding-bottom 0.5s ease-in;
+        }
+        .accordion-icon {
+            transition: transform 0.3s;
+        }
+        .accordion-icon.rotate {
+            transform: rotate(45deg);
+        }
+
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15"> 
+                </a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Beranda</a> 
+                    <a href="tentang.html" class="text-gray-600 hover:text-gray-900">Tentang</a>
+                    <a href="produk.html" class="text-gray-600 hover:text-gray-900">Produk</a>
+                    <a href="tips.html" class="text-gray-600 hover:text-gray-900">Tips</a>
+                    <a href="kontak.html" class="text-gray-600 hover:text-gray-900">Kontak</a>
+                    <a href="review.html" class="text-gray-600 hover:text-gray-900">Review</a>
+                    <a href="#" class="text-gray-900 border-b-2 border-transparent border-b-brown-600 pb-1">FAQ</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero-bg-faq h-[300px] md:h-[400px] relative flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
+            
+            <h1 class="text-6xl sm:text-7xl font-aboreto tracking-tight">FAQ</h1>
+            <p class="text-base font-light leading-relaxed mt-4 max-w-2xl mx-auto">
+                Pertanyaan yang Sering Diajukan
+            </p>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="bg-faq-bg-brown text-white p-6 md:p-8 rounded-3xl shadow-xl">
+                <h2 class="text-2xl font-bold mb-4 text-center">Mengenai Produk Kopi Aroma</h2>
+                
+                <div class="accordion-container space-y-2">
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Bagaimana mengetahui tanggal kedaluwarsa kopi yang saya beli?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Kopi Aroma terbuat dari 100% kopi tanpa bahan kimia maupun pengawet. Kopi Aroma tidak menggunakan tanggal kadaluarsa namun menggunakan tanggal “Baik Digunakan Sebelum” (Best Before) yang tertera di belakang kemasan. Dengan penyimpanan yang baik, sebelum Kopi Aroma dibuka dari bungkusnya, keharuman dan rasa kopi dapat bertahan lama. Namun, setelah 6 bulan, keharuman kopi dan rasanya mungkin akan berubah.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Berapa lama Kopi Aroma baik dikonsumsi?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Kualitas kopi terbaik berada pada 2-4 minggu setelah disangrai. Selanjutnya, keharuman dan rasa kopi dapat bertahan lebih dari 6 bulan jika kopi masih berada dalam kemasan dan disimpan dengan rapat di rumah. Kopi Aroma sengaja mengsangrai kopi di hari yang sama dengan hari penjualan agar Pelanggan dapat menikmati kopi dalam kondisi paling baik secara rasa dan keharuman. Pelanggan disarankan untuk membeli secukupnya, menyimpan kopi di tempat yang rapat , kering, tidak dijemur matahari, dan segera mengkonsumsi dalam waktu 2-4 minggu setelah tanggal produksi. Dengan penyimpanan yang baik, sebelum Kopi Aroma dibuka dari bungkusnya, keharuman dan rasa kopi akan bertahan lama dan baik digunakan sampai 6 bulan.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Saya mendapatkan Kopi Aroma dari teman/pihak ketiga, Bagaimana cara mengetahui kopi dalam keadaan baik?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Pertama, Periksa “tanggal produksi” dan “tanggal baik digunakan sebelum” yang tertera di belakang kemasan. Kedua, Periksa kondisi kemasan apakah dalam keadaan baik. Ketiga, Periksa keharuman kopi. Sifat kopi meresap bau-bauan dari lingkungan sekitar. Kopi dapat berubah keharumannya jika disimpan dekat barang yang memiliki wangi yang tajam. Kopi dapat hilang baunya jika disimpan di tempat terbuka dalam waktu yang lama.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-faq-bg-dark-brown text-white p-6 md:p-8 rounded-3xl shadow-xl">
+                <h2 class="text-2xl font-bold mb-4 text-center">Mengenai Cara Pembelian</h2>
+                
+                <div class="accordion-container space-y-2">
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Mengapa pembelian per konsumen dibatasi?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Kami menjual kopi dalam jumlah terbatas karena kopi harus dituakan selama 5 dan 8 tahun kemudian disangrai menggunakan kayu selama 2 jam. Proses sangrai dilakukan langsung oleh Bapak Widyapratama sendiri.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Saya tinggal di luar kota, apakah Kopi Aroma dapat diantar?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Kami tidak melakukan pengantaran. Kami menjual kopi dengan jumlah yang terbatas dan tidak sanggup melayani seluruh permintaan yang ada. Jika memungkinkan, kami berharap Bapak/Ibu memiliki kenalan yang bisa membantu membeli langsung ke Jalan Banceuy dan mengirimkan ke Tempat Bapak/Ibu.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Apakah saya bisa membayar dengan cara transfer/kartu debit?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Saat ini, kami hanya menerima uang tunai. Pelanggan yang memerlukan uang tunai dan mencari ATM, dapat dengan mudah menemukan ATM di area toko kami. Lokasi ATM tersebar sekitar 300 meter dari toko kami. Misalnya Bank BCA berada di ujung jalan Banceuy; ATM BRI, Mandiri, dan BNI di dekat Pasar Baru (Jalan Otista); dan ATM Bank Panin di Jalan Banceuy ke arah Alun-alun.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Apakah saya bisa membeli Kopi Aroma melalui Aplikasi Online seperti Gojek/Grab?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Saat ini, kami belum ada kerja sama sebagai partner Gojek/Grab namun kami menemukan di toko kami, driver Gojek/Grab yang membeli kopi. Pelanggan mungkin bisa menghubungi Gojek/Grab untuk meminta membelikan kopi ke Kopi Aroma, Jl. Banceuy No. 51. Untuk informasi tentang Waktu Operasional, Produk, Ukuran Kemasan, Jenis Gilingan dan Harga dapat dilihat di website ini.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Apakah saya bisa memesan Kopi Aroma kemudian diambil?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Pelanggan perlu langsung melakukan pemesanan di toko kami. Kami akan menyiapkan pesanan sesuai urutan pemesanan.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="bg-faq-bg-brown text-white p-6 md:p-8 rounded-3xl shadow-xl">
+                <h2 class="text-2xl font-bold mb-4 text-center">Mengenai Operasional Toko</h2>
+                
+                <div class="accordion-container space-y-2">
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Jam berapa Kopi Aroma buka?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Pukul 08.30 pagi – 14.30 sore.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Apakah saya bisa membeli kopi saat hari libur?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">THari Minggu dan Hari Libur Nasional kami tutup.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-faq-bg-dark-brown text-white p-6 md:p-8 rounded-3xl shadow-xl">
+                <h2 class="text-2xl font-bold mb-4 text-center">Mengenai Relasi dengan Petani, Distributor, dan Supplier</h2>
+                
+                <div class="accordion-container space-y-2">
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Saya petani kopi, bagaimana cara menawarkan kopi mentah ke Kopi Aroma?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Silakan Bapak/Ibu mengirimkan contoh dan informasi tentang kopi mentah yang ditawarkan secara datang langsung atau melalui pos ke Toko Kopi Aroma, di Jalan Banceuy No. 51, Bandung 40111.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header text-lg font-semibold" onclick="toggleAccordion(this)">
+                            <span>Bagaimana menghubungi Kopi Aroma untuk penawaran produk/jasa?</span>
+                            <span class="accordion-icon text-2xl font-light">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="text-sm font-light">Silakan menghubungi kami melalui email (info@kopiaroma.id) atau telepon (022-4230473) atau pos ke Toko Kopi Aroma, Jl. Banceuy No. 51, Bandung 40111.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm pb-8">
+                
+                <div class="flex items-start space-x-4">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15 mt-1"> 
+                    <div class="text-gray-600 hidden md:block">
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Kontak</h4>
+                    <div class="text-gray-600 space-y-1">
+                        <p>Alamat: Jl. Banceuy No. 51</p>
+                        <p>Bandung 40182</p>
+                        <p>No. Telepon: +62 2242 30473</p>
+                        <p>Email: <a href="mailto:info@kopiaroma.id" class="hover:text-gray-900">info@kopiaroma.id</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Waktu Operasional</h4>
+                    <div class="text-gray-600 mb-4">
+                        <p>Senin s/d Sabtu</p>
+                        <p>Pukul 08:00 - 15:00 WIB</p>
+                        <p>(Hari Minggu dan Hari Libur TUTUP)</p>
+                    </div>
+                </div>
+                    
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/fb.png" alt="Facebook" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/yt.png" alt="YouTube" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/in.png" alt="LinkedIn" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/ig.png" alt="Instagram" class="w-6 h-6 rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-4">
+
+            <div class="text-gray-600 text-sm">
+                <p>©2025 Kopi Aroma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+
+            // Tutup semua yang sedang terbuka
+            document.querySelectorAll('.accordion-content.active').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.previousElementSibling.querySelector('.accordion-icon').classList.remove('rotate');
+                }
+            });
+
+            // Buka/Tutup yang diklik
+            content.classList.toggle('active');
+            icon.classList.toggle('rotate');
+        }
+    </script>
+</body>
+</html>

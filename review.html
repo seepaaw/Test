@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Aroma - Review</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', 'sans-serif'], 
+                        aboreto: ['Aboreto', 'cursive'],
+                    },
+                    colors: {
+                        'kopi-dark': '#371e17',      
+                        'kopi-accent-light': '#AF8456', 
+                        'kopi-accent-dark': '#493724', 
+                        'card-judul-top': '#F8EDE2', 
+                        'card-judul-bottom': '#DCA56D', 
+                    },
+                    borderRadius: {
+                        '12': '0.75rem', 
+                        '3xl': '1.5rem', 
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg-review {
+            background-image: url('img/header.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        .border-b-brown-600 {
+            border-color: #371e17; 
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 0, 0, 0.8);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        .play-button:hover {
+            background: red;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .play-icon {
+            border-style: solid;
+            border-width: 10px 0 10px 18px;
+            border-color: transparent transparent transparent white;
+            margin-left: 5px; 
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15"> 
+                </a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Beranda</a> 
+                    <a href="tentang.html" class="text-gray-600 hover:text-gray-900">Tentang</a>
+                    <a href="produk.html" class="text-gray-600 hover:text-gray-900">Produk</a>
+                    <a href="tips.html" class="text-gray-600 hover:text-gray-900">Tips</a>
+                    <a href="kontak.html" class="text-gray-600 hover:text-gray-900">Kontak</a>
+                    <a href="#" class="text-gray-900 border-b-2 border-transparent border-b-brown-600 pb-1">Review</a>
+                    <a href="FAQ.html" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero-bg-review h-[400px] relative flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
+            
+    
+            <h1 class="text-6xl sm:text-7xl font-aboreto tracking-tight mb-6">REVIEW</h1>
+            <p class="text-base font-light leading-relaxed px-4 md:px-0 max-w-2xl mx-auto">
+                Lihat apa kata para reviewer dan pecinta kopi mengenai Kopi Aroma.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <a href="https://youtu.be/Vjm3UzplM_4" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/Vjm3UzplM_4/hqdefault.jpg" alt="Erlangga Inspirasi Channel Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Erlangga Inspirasi Channel</p>
+                    </div>
+                </a>
+
+                <a href="https://youtu.be/CuE148O0Rbo" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/CuE148O0Rbo/hqdefault.jpg" alt="Bandung TV Official Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Bandung TV Official</p>
+                    </div>
+                </a>
+                
+                <a href="https://youtu.be/H-MqbQoH3IU" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/H-MqbQoH3IU/hqdefault.jpg" alt="Official NET News Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Official NET News</p>
+                    </div>
+                </a>
+
+                <a href="https://youtu.be/rz-K0s2Opx0" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/rz-K0s2Opx0/hqdefault.jpg" alt="Dicky Kurniawan Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Dicky Kurniawan</p>
+                    </div>
+                </a>
+
+                <a href="https://youtu.be/-5ScpbTu84M" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/-5ScpbTu84M/hqdefault.jpg" alt="Icha Ayu Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Icha Ayu</p>
+                    </div>
+                </a>
+                
+                <a href="https://youtu.be/_MKasNY-7GQ" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/_MKasNY-7GQ/hqdefault.jpg" alt="Suara Mahasiswa Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Suara Mahasiswa</p>
+                    </div>
+                </a>
+
+                <a href="https://youtu.be/bOaIxOUjqAI" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/bOaIxOUjqAI/hqdefault.jpg" alt="Official iNews Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Official iNews</p>
+                    </div>
+                </a>
+                
+                <a href="https://youtu.be/HSio_K0soQw" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/HSio_K0soQw/hqdefault.jpg" alt="Pentas TV Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Pentas TV</p>
+                    </div>
+                </a>
+                
+                <a href="https://youtu.be/cfo6fm2umNU" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/cfo6fm2umNU/hqdefault.jpg" alt="Yonghan Lim Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Yonghan Lim</p>
+                    </div>
+                </a>
+                
+                <a href="https://youtu.be/jKcJpU7whW8" target="_blank" class="block group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                    <div class="relative w-full overflow-hidden aspect-video">
+                        <img src="https://img.youtube.com/vi/jKcJpU7whW8/hqdefault.jpg" alt="Netmediatama Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    <div class="p-4 text-white text-center">
+                        <p class="text-lg font-semibold">Netmediatama</p>
+                    </div>
+                </a>
+                
+                <div class="md:col-span-2 flex justify-center">
+                    <a href="https://youtu.be/Bhud1vbxHQ0" target="_blank" class="block w-full md:w-1/2 group rounded-3xl shadow-xl overflow-hidden bg-kopi-dark hover:shadow-2xl transition duration-300">
+                        <div class="relative w-full overflow-hidden aspect-video">
+                            <img src="https://img.youtube.com/vi/Bhud1vbxHQ0/hqdefault.jpg" alt="dr. Ray Leonard Judijanto Review Kopi Aroma" class="absolute inset-0 w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                            <div class="play-button">
+                                <div class="play-icon"></div>
+                            </div>
+                        </div>
+                        <div class="p-4 text-white text-center">
+                            <p class="text-lg font-semibold">dr. Ray Leonard Judijanto</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm pb-8">
+                
+                <div class="flex items-start space-x-4">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15 mt-1"> 
+                    <div class="text-gray-600 hidden md:block">
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Kontak</h4>
+                    <div class="text-gray-600 space-y-1">
+                        <p>Alamat: Jl. Banceuy No. 51</p>
+                        <p>Bandung 40182</p>
+                        <p>No. Telepon: +62 2242 30473</p>
+                        <p>Email: <a href="mailto:info@kopiaroma.id" class="hover:text-gray-900">info@kopiaroma.id</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Waktu Operasional</h4>
+                    <div class="text-gray-600 mb-4">
+                        <p>Senin s/d Sabtu</p>
+                        <p>Pukul 08:00 - 15:00 WIB</p>
+                        <p>(Hari Minggu dan Hari Libur TUTUP)</p>
+                    </div>
+                </div>
+                    
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/fb.png" alt="Facebook" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/yt.png" alt="YouTube" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/in.png" alt="LinkedIn" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/ig.png" alt="Instagram" class="w-6 h-6 rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-4">
+
+            <div class="text-gray-600 text-sm">
+                <p>©2025 Kopi Aroma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

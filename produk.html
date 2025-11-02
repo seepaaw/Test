@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Aroma - Produk Kami</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', 'sans-serif'], 
+                        aboreto: ['Aboreto', 'cursive'],
+                    },
+                    colors: {
+                        'kopi-dark': '#371e17', 
+                        'kopi-light': '#efebe9', 
+                        'kopi-darker': '#25140F', 
+                    },
+                    borderRadius: {
+                        '12': '0.75rem', 
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg-produk {
+            background-image: url('img/header.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+        .border-b-brown-600 {
+            border-color: #371e17; 
+        }
+        .product-container { 
+             display: flex;
+             flex-direction: column;
+             height: 100%;
+             border-radius: 0.75rem; 
+             overflow: hidden; 
+             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
+        }
+        .product-description-card {
+            background: linear-gradient(to bottom, #493724, #AF8456);
+            flex-grow: 1; 
+            padding-bottom: 2rem; 
+            text-align: left; 
+            border-bottom-left-radius: 0; 
+            border-bottom-right-radius: 0;
+            padding-top: 1rem; 
+            color: #fff; 
+        }
+
+        .product-description-card h3 {
+            color: #fff; 
+        }
+        .product-description-card p {
+            color: #e0e0e0; 
+        }
+        .product-price-section {
+            background-color: #25140F; 
+            padding: 1.5rem; 
+            color: #ffffff; 
+            text-align: center;
+            flex-shrink: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0.75rem; 
+            border-bottom-right-radius: 0.75rem;
+        }
+        .product-price-section h4 {
+            color: #ffffff; 
+            border-color: rgba(255, 255, 255, 0.5); 
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15"> 
+                </a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Beranda</a> 
+                    <a href="tentang.html" class="text-gray-600 hover:text-gray-900">Tentang</a>
+                    <a href="produk.html" class="text-gray-900 border-b-2 border-transparent border-b-brown-600 pb-1">Produk</a>
+                    
+                    <a href="tips.html" class="text-gray-600 hover:text-gray-900">Tips</a>
+                    <a href="kontak.html" class="text-gray-600 hover:text-gray-900">Kontak</a>
+                    <a href="review.html" class="text-gray-600 hover:text-gray-900">Review</a>
+                    <a href="FAQ.html" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero-bg-produk h-[500px] relative flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
+            
+            <h1 class="text-6xl sm:text-7xl font-aboreto tracking-tight mb-8">PRODUK</h1>
+            
+            <p class="text-base font-light leading-relaxed mb-6 px-4 md:px-0">
+               Kopi Aroma sengaja menyangrai kopi pada hari yang sama dengan hari kopi dijual agar Tuan dan Nyonya Pelangga dapat menikmati Kopi Aroma dalam kondisi terbaiknya. Kopi yang dibeli disarankan untuk segera dikonsumsi dalam waktu 2 minggu-1 bulan. Oleh karena itu kami menyarankan untuk untuk membeli dalam jumlah secukupnya.
+            </p>
+            <p class="text-sm font-light leading-relaxed mb-6 px-4 md:px-0">
+                Dengan pengolahan yang masih tradional memerlukan waktu yang panjang, pembelian setiap pelanggan dibatasi paling banyak 3 kg. Mohon maaf kami tidak sanggup memenuhi seluruh permintaan konsumen kami.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div class="product-container">
+                <div class="product-description-card rounded-t-2xl">
+                    <img src="img/arabika.png" alt="Kopi Mokka Arabika" class="w-full h-auto object-cover p-5 mx-auto">
+                    <div class="p-10"> 
+                        <h3 class="text-3xl font-bold font-aboreto mb-2">Mokka Arabika</h3>
+                        <p class="text-sm leading-relaxed max-w-sm">
+                            “Harum, memiliki kandungan asam yang lembut dan rendah kafein” 100% kopi Arabika, gabungan dari Priangan, Jawa, Aceh, Medan, Flores dan Timor. Kopi mentah disimpan selama 8 tahun dan disangrai menggunakan kayu selama 2 jam sehingga menghasilkan wangi dan rasa yang khas.
+                        </p>
+                    </div>
+                </div>
+                <div class="product-price-section">
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 border-b inline-block pb-1">Ukuran</h4>
+                            <p>250 gram (1/4 kg)</p>
+                            <p>500 gram (1/2 kg)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 border-b inline-block pb-1">Harga</h4>
+                            <p>Rp50.000</p>
+                            <p>Rp100.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-description-card rounded-t-2xl">
+                    <img src="img/robusta.png" alt="Kopi Robusta" class="w-full h-auto object-cover p-5 mx-auto">
+                    <div class="p-10">
+                        <h3 class="text-3xl font-bold font-aboreto mb-2">Robusta</h3>
+                        <p class="text-sm leading-relaxed max-w-sm">
+                            “Unggul di rasa pahit dan tinggi kafein” 100% kopi Robusta, gabungan Robusta Sumatera dan Jawa. Kopi mentah dituakan selama 5 tahun kemudian disangrai dengan kayu selama 2 jam.                        </p>
+                    </div>
+                </div>
+                <div class="product-price-section">
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 border-b inline-block pb-1">Ukuran</h4>
+                            <p>250 gram (1/4 kg)</p>
+                            <p>500 gram (1/2 kg)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 border-b inline-block pb-1">Harga</h4>
+                            <p>Rp40.000</p>
+                            <p>Rp80.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm pb-8">
+                
+                <div class="flex items-start space-x-4">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15 mt-1"> 
+                    <div class="text-gray-600 hidden md:block">
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Kontak</h4>
+                    <div class="text-gray-600 space-y-1">
+                        <p>Alamat: Jl. Banceuy No. 51</p>
+                        <p>Bandung 40182</p>
+                        <p>No. Telepon: +62 2242 30473</p>
+                        <p>Email: <a href="mailto:info@kopiaroma.id" class="hover:text-gray-900">info@kopiaroma.id</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Waktu Operasional</h4>
+                    <div class="text-gray-600 mb-4">
+                        <p>Senin s/d Sabtu</p>
+                        <p>Pukul 08:00 - 15:00 WIB</p>
+                        <p>(Hari Minggu dan Hari Libur TUTUP)</p>
+                    </div>
+                </div>
+                    
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/fb.png" alt="Facebook" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/yt.png" alt="YouTube" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/in.png" alt="LinkedIn" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/ig.png" alt="Instagram" class="w-6 h-6 rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-4">
+
+            <div class="text-gray-600 text-sm">
+                <p>©2025 Kopi Aroma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

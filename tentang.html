@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Aroma - Tentang Kami</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Josefin Sans"', 'sans-serif'], 
+                        aboreto: ['Aboreto', 'cursive'],
+                    },
+                    colors: {
+                        'kopi-dark': '#371e17', 
+                        'kopi-light': '#efebe9', 
+                    },
+                    borderRadius: {
+                        '12': '0.75rem', 
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        
+        .hero-bg-tentang {
+            background-image: url('img/header.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+        .border-b-brown-600 {
+            border-color: #371e17; 
+        }
+        .heritage-box-bg {
+             background: linear-gradient(to bottom, #493724, #AF8456); 
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15"> 
+                </a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                   <a href="index.html" class="text-gray-600 hover:text-gray-900">Beranda</a>
+                    <a href="tentang.html" class="text-gray-900 border-b-2 border-transparent border-b-brown-600 pb-1">Tentang</a>
+                    <a href="produk.html" class="text-gray-600 hover:text-gray-900">Produk</a>
+                    <a href="tips.html" class="text-gray-600 hover:text-gray-900">Tips</a>
+                    <a href="kontak.html" class="text-gray-600 hover:text-gray-900">Kontak</a>
+                    <a href="review.html" class="text-gray-600 hover:text-gray-900">Review</a>
+                    <a href="FAQ.html" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero-bg-tentang h-[500px] relative flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
+            
+            <h1 class="text-6xl sm:text-7xl font-aboreto tracking-tight mb-8">TENTANG</h1>
+            
+            <p class="text-lg mb-4">
+                Tuan dan Nyonya Pelanggan Kopi Aroma terhormat,
+            </p>
+            <p class="text-sm font-light leading-relaxed mb-6">
+                Terima kasih telah menjadi bagian dari perjalanan Kopi Aroma.
+                Tanpa Tuan dan Nyonya, langkah kami takkan sampai sejauh ini! Tahun 2025 menjadi tahun yang berkesan,
+                95 tahun sudah Kopi Aroma berjalan perlahan, menjaga aroma dan tradisi.
+                September 1930 – sekarang.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div class="space-y-6 text-kopi-dark order-2 md:order-1 pt-10">
+                <p class="leading-relaxed">
+                    Kopi Aroma adalah usaha keluarga berukuran kecil (home-industry) yang dikelola oleh Pak Widyapratama. Kopi Aroma menjual kopi biji dan bubuk kopi dalam jumlah terbatas.
+                </p>
+                <p class="leading-relaxed">
+                    Kopi Aroma didirikan oleh Tan Houw Sian pada tahun 1930. Awalnya, Tan Houw Sian merintis Kopi Aroma dengan melayani kebutuhan kopi pelanggan di Kota Bandung termasuk orang Belanda dan Jepang yang waktu itu tinggal di Bandung. Saat ini, Kopi Aroma dijalankan oleh generasi kedua dan ketiga, Bapak Widyapratama dan keluarganya. Seiring waktu, berkat pelanggan yang menggemari rasa dan keharuman Kopi Aroma, Kopi Aroma menjadi pilihan kopi yang diminum pelanggan di rumah dan menjadi oleh-oleh khas kota Bandung. Kopi Aroma berkembang lebih luas sehingga dikenal oleh pelanggan dari di dalam maupun luar kota Bandung, bahkan mancanegara.
+                </p>
+                <p class="leading-relaxed">
+                    Pak Widyapratama dan keluarga mempertahankan cara mengolah Kopi Aroma yang tradisional. Sehingga pada tahun 2024, Kopi Aroma mendapat penghargaan “Anugrah Budaya Kota Bandung 2024” dari Dinas Kebudayaan dan Pariwisata Kota Bandung, atas partisipasi aktif Kopi Aroma dalam pelestarian dan pengembangan tradisi pengolahan kopi.
+                </p>
+            </div>
+            
+            <div class="md:sticky md:top-24 order-1 md:order-2">
+                <img src="img/Widyapratama.png" alt="Pemilik Kopi Aroma, Pak Widyapratama" class="w-full h-auto object-cover rounded-2xl shadow-xl">
+                <blockquote class="mt-4 text-center text-sm italic text-kopi-dark">
+                    “Widyapratama dan keluarganya berhasil menjaga cita rasa khas Kopi Aroma. Kopi ini tidak hanya menjadi oleh-oleh khas Bandung, tetapi juga simbol dari ketekunan, kualitas, dan warisan keluarga yang tak lekang oleh waktu.”
+                </blockquote>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 heritage-box-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white"> 
+            <h2 class="text-5xl font-aboreto text-white mb-2">KOPI AROMA</h2>
+            <h3 class="text-2xl font-bold text-white mb-8">Warisan Rasa dan Budaya</h3>
+            
+            <div class="space-y-6 text-left">
+                <p class="leading-relaxed">
+                    Cara mengolah kopi dipertahankan menggunakan proses tradisonal, tanpa menggunakan bahan kimia maupun bahan tambahan. Kopi mentah dipilih langsung dari kebun kopi Indonesia mulai dari Sumatera, Jawa, Sulawesi dan Nusa Tenggara. Kopi mentah yang populer disebut kopi hijau diproses menjadi kopi biji matang lalu digiling menjadi kopi bubuk. Kopi mentah terlebih dahulu dijemur di bawah sinar matahari. Selanjutnya, kopi mentah Arabika mengalami proses penuaanselama 8 tahun sehingga rasa asamnya berkurang (tidak lagi kecut), kafeinnya berkurang serta kopi menjadi lebih harum. Sementara kopi mentah Robusta dituakan selama 5 tahun sehingga kafeinnya berkurang dan kopi juga menjadi lebih harum. Setelah proses penuaan di gudang, kopi disangrai (roasting) menggunakan mesin roasting berbahan bakar kayu karet. Mesin yang digunakan masih mesin buatan Jerman yang sama sejak tahun 1930. Kopi disangrai setiap pagi oleh Pak Widyapratama sendiri. Kopi matang segera dijual di Toko Kopi Aroma agar pelanggan dapat menikmati kopi terbaru dari sangraian. Keluarga Pak Widyapratama dibantu karyawan setia turun langsung menjual Kopi Aroma di Jalan Banceuy No. 51. Kopi Aroma diolah memerlukan proses dan waktu yang panjang.
+               
+                </p>
+            </div>
+            
+            <p class="mt-10 text-base font-semibold italic">
+                Kopi Aroma terus berusaha mempertahankan nilai tradisi keluarga, proses pembuatan yang tradisional. Semoga Kopi Aroma selalu menjadi pilihan kopi di rumah Tuan dan Nyoya Pelanggan!            
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm pb-8">
+                
+                <div class="flex items-start space-x-4">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15 mt-1"> 
+                    <div class="text-gray-600 hidden md:block">
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Kontak</h4>
+                    <div class="text-gray-600 space-y-1">
+                        <p>Alamat: Jl. Banceuy No. 51</p>
+                        <p>Bandung 40182</p>
+                        <p>No. Telepon: +62 2242 30473</p>
+                        <p>Email: <a href="mailto:info@kopiaroma.id" class="hover:text-gray-900">info@kopiaroma.id</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Waktu Operasional</h4>
+                    <div class="text-gray-600 mb-4">
+                        <p>Senin s/d Sabtu</p>
+                        <p>Pukul 08:00 - 15:00 WIB</p>
+                        <p>(Hari Minggu dan Hari Libur TUTUP)</p>
+                    </div>
+                </div>
+                    
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/fb.png" alt="Facebook" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/yt.png" alt="YouTube" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/in.png" alt="LinkedIn" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/ig.png" alt="Instagram" class="w-6 h-6 rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-4">
+
+            <div class="text-gray-600 text-sm">
+                <p>©2025 Kopi Aroma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Aroma - Tips</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        
+                        sans: ['"Josefin Sans"', 'sans-serif'], 
+                        
+                        aboreto: ['Aboreto', 'cursive'],
+                    },
+                    colors: {
+                        'kopi-dark': '#371e17', 
+                        'kopi-light': '#efebe9', 
+                        'kopi-darker': '#25140F', 
+                    },
+                    borderRadius: {
+                        '12': '0.75rem', 
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg-tips {
+            background-image: url('img/header.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+        .border-b-brown-600 {
+            border-color: #371e17; 
+        }
+        .serving-bg {
+            background: linear-gradient(to bottom, #493724, #AF8456); 
+            color: #fff;
+        }
+        .serving-bg h2, .serving-bg h3 {
+            color: #fff;
+        }
+        .serving-bg p, .serving-bg li, .serving-bg h4 {
+            color: #e0e0e0; 
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15"> 
+                </a>
+                <div class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Beranda</a> 
+                    <a href="tentang.html" class="text-gray-600 hover:text-gray-900">Tentang</a>
+                    <a href="produk.html" class="text-gray-600 hover:text-gray-900">Produk</a>
+                    <a href="#" class="text-gray-900 border-b-2 border-transparent border-b-brown-600 pb-1">Tips</a>
+                    
+                    <a href="kontak.html" class="text-gray-600 hover:text-gray-900">Kontak</a>
+                    <a href="review.html" class="text-gray-600 hover:text-gray-900">Review</a>
+                    <a href="FAQ.html" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero-bg-tips h-[450px] relative flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
+        
+            <h1 class="text-6xl sm:text-7xl font-aboreto tracking-tight mb-6">TIPS</h1>
+            
+            <p class="text-base font-light leading-relaxed mb-6 px-4 md:px-0 max-w-2xl mx-auto">
+                Untuk menjaga rasa dan kekhasan Kopi Aroma, kami memberikan beberapa tips untuk saran penyimpanan dan penyajian yang dapat diikuti oleh para Tuan dan Nyonya Pelanggan.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            
+            <div class="order-2 md:order-1">
+                <img src="img/penyimpanan.png" alt="Saran Penyimpanan Kopi" class="w-full h-auto rounded-3xl shadow-xl">
+            </div>
+
+            <div class="order-1 md:order-2">
+                <h3 class="text-2xl font-bold text-kopi-dark mb-4">Saran Penyimpanan</h3>
+                <p class="text-base text-kopi-dark leading-relaxed mb-8">
+                    Kopi disarankan untuk segera dikonsumsi dalam waktu singkat. Namun jika disimpan dengan benar, aroma, keharuman dan rasa kopi dapat bertahan lebih lama.
+                </p>
+                
+                <h4 class="text-2xl font-bold text-kopi-dark mb-4">Petunjuk Penyimpanan</h4>
+                <ul class="list-disc list-outside space-y-0 pl-5 text-kopi-dark">
+                    <li>Simpan rapat dalam toples yang kedap udara.</li>
+                    <li>Simpan di tempat yang sejuk, jauhkan dari matahari/lembap atau benda yang berbau/mengeluarkan bau-bauan.</li>
+                    <li>Kopi menyerap bau-bauan, hindari toples yang berbau dan hindari meletakkan kopi di dekat wadah yang memiliki bau yang kuat.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="py-16 serving-bg"> 
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h2 class="text-2xl font-bold text-kopi-dark mb-4">Cara Membuat Segelas Kopi Enak</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                
+                <div class="order-2 md:order-1">
+                    <p class="text-base leading-relaxed mb-8">
+                        Pelanggan kami memiliki selera dan cara yang berbeda-beda dalam menyajikan segelas kopi. Salah satu cara paling populer adalah penyajian kopi tubruk yang paling mudah dan efisien dalam konsumsi kopi. Cara ini mudah, cepat, murah dan menghasilkan kopi yang harum, pekat, dan kuat.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-kopi-dark mb-4">Saran Penyajian Kopi Tubruk</h3>
+                    <div class="space-y-4">
+                        <ol class="list-decimal list-outside space-y-0 pl-5">
+                            <li>Siapkan 1 sendok makan kopi ke dalam cangkir (+/- 300 mL).</li>
+                            <li>Untuk menghasilkan segelas kopi sejati disarankan menggunakan cangkir ukuran penuh (+/- 15-200) kopi bubuk halus. Namun untuk membuat segelas kopi yang lebih encer, gunakan 1 sendok kopi bubuk (+/- 10) kopi kasar.</li>
+                            <li>Rebus air hingga mendidih.</li>
+                            <li>Tuangkan air yang sudah direbus ke dalam cangkir perlahan-lahan.</li>
+                            <li>Aduk rata.</li>
+                            <li>Tambahkan gula/pala/susu sesuai selera.</li>
+                            <li>Pastikan bubuk kopi berada di dasar cangkir.</li>
+                            <li>Kopi siap diminum.</li>
+                        </ol>
+
+                        <h4 class="font-bold pt-4">Catatan:</h4>
+                        <p class="text-sm italic">
+                            Perbandingan air dan kopi dapat Pelanggan sesuaikan dengan tingkat kepekatan kopi, ukuran cangkir, dan keharuman yang diinginkan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="order-1 md:order-2">
+                    <img src="img/penyajian.png" alt="Penyajian Kopi Tubruk" class="w-full h-auto rounded-3xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm pb-8">
+                
+                <div class="flex items-start space-x-4">
+                    <img src="img/logo.png" alt="93 Aroma Logo" class="h-15 mt-1"> 
+                    <div class="text-gray-600 hidden md:block">
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Kontak</h4>
+                    <div class="text-gray-600 space-y-1">
+                        <p>Alamat: Jl. Banceuy No. 51</p>
+                        <p>Bandung 40182</p>
+                        <p>No. Telepon: +62 2242 30473</p>
+                        <p>Email: <a href="mailto:info@kopiaroma.id" class="hover:text-gray-900">info@kopiaroma.id</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Waktu Operasional</h4>
+                    <div class="text-gray-600 mb-4">
+                        <p>Senin s/d Sabtu</p>
+                        <p>Pukul 08:00 - 15:00 WIB</p>
+                        <p>(Hari Minggu dan Hari Libur TUTUP)</p>
+                    </div>
+                </div>
+                    
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/fb.png" alt="Facebook" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/yt.png" alt="YouTube" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/in.png" alt="LinkedIn" class="w-6 h-6 rounded-lg">
+                        </a>
+                        <a href="#" class="text-gray-500 hover:opacity-75 transition duration-150">
+                            <img src="img/ig.png" alt="Instagram" class="w-6 h-6 rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-4">
+
+            <div class="text-gray-600 text-sm">
+                <p>©2025 Kopi Aroma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
